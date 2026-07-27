@@ -127,8 +127,8 @@ class EntryMixin:
             start_window = 5
             end_window = tf_secs - 5
         else:
-            start_window = 15
-            end_window = tf_secs - 20
+            start_window = 5
+            end_window = tf_secs - 10
 
         if seconds_into_candle < start_window:
             self.entry_block_reasons["CANDLE_ENTRY_START"] = (
